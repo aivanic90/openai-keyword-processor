@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", 'Open Sans', sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#apiKey {
+    padding: 0.5em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+}
+
+#apiKeyForm {
+    display: flex;
+    align-items: center;
+}
+
+#presetSelect {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: auto;
+    padding: 0.5em;
+    width: 160px;
+}
+
+#presetLoader, #languageChoose {
+    color: lightgray;
+}
+
+#keywordArea {
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#apiKeyLabel {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+#messageBox {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 1em;
+}
+
+#langOptionsWrap {
+    flex-direction: row;
+    align-items: center;
+    display: none;
+    margin-left: auto;
+    height: 100%;
+}
+
+#presetErrorWrap {
+    color: red;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#translateLabel {
+    margin-right: 0.5em;
+}
+
+#langOptions {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 100%;
+    margin-left: auto;
+    padding: 0.5em;
+    width: 160px;
+}
+
+#keywords {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0 auto;
+    resize: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#startBtn {
+    margin-top: 0.5em;
+}
+
+#submitKey {
+    margin-right: auto;
+    margin-top: 0;
+    margin-left: 0.7em;
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.2em auto 5em;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#downloadTable {
+    margin-left: auto;
+    display: none;
+}
+
+#downloadTable a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+}
+
+
+

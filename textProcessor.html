@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Text Processor (beta)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+<h1>AI Text Processor (beta)</h1>
+
+<form id="apiKeyForm">
+    <label id="apiKeyLabel" for="apiKey">API Key:</label>
+    <input type="password" id="apiKey" name="apiKey">
+    <button type="submit" id="submitKey">Submit</button>
+
+    <select name="presets" id="presetSelect">
+        <option value="" id="presetLoader">Load a preset</option>
+        <option value="categorization">Categorization</option>
+        <option value="translation">Translation</option>
+    </select>
+</form>
+
+<section id="messageBox">
+    <div id="langOptionsWrap">
+    <p id="translateLabel">Translate to</p>
+        <select name="languages" id="langOptions">
+            <option value="" id="languageChoose">Choose a language</option>
+            <option value="English">English</option>
+            <option value="Danish">Danish</option>
+            <option value="Serbian">Serbian</option>
+        </select>
+    </div>
+
+    <div id="presetErrorWrap">
+        <p id="presetError"></p>
+    </div>
+</section>
+   
+<section id="keywordArea">
+    <textarea id="keywords" rows="10" cols="30" placeholder="Enter up to 100 keywords (one per line)"></textarea>
+    <br>
+    <button type="button" id="startBtn">Start</button>
+</section>
+
+<br>
+<div id="loadingMessage"></div>
+<table id="keywordTable">
+    <div id="downloadTable">
+        <a id="downloadLink" href="">Download as CSV</a>
+    </div>
+    <thead>
+        <tr>
+            <th>Keyword</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody id="keywordTableBody"></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
